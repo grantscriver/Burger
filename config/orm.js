@@ -3,6 +3,7 @@ var connection = require("../config/connection.js");
 
 // Object for all our SQL statement functions.
 var orm = {
+  // Displays all burgers from database
   all: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {
@@ -13,6 +14,7 @@ var orm = {
       cb(result);
     });
   },
+  // when user add a new burger to the database
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
@@ -29,7 +31,7 @@ var orm = {
       cb(result);
     });
   },
-
+  // when user clicks devour it updates the database
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 

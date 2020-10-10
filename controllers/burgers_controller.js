@@ -6,6 +6,7 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
+// Gets the burgers_db
 router.get("/", function(req, res) {
   burger.all(function(data) {
     var hbsObject = {
@@ -15,8 +16,8 @@ router.get("/", function(req, res) {
   });
 });
 
+// Add a new burger
 router.post("/api/burgers", function(req, res) {
-  // not getting here
   burger.create([
     "burger_name", "devoured"
   ], [
@@ -26,6 +27,7 @@ router.post("/api/burgers", function(req, res) {
     res.json({ id: result.insertId });
   });
 });
+
 
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
@@ -43,7 +45,7 @@ router.put("/api/burgers/:id", function(req, res) {
 
 router.delete("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
-
+// delete a burger
   burger.delete(condition, function(result) {
     if (result.affectedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
