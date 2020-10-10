@@ -4,9 +4,13 @@ CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
-create table burgers (
-	id int not null auto_increment,
-    burger_name varchar(50) null,
-    devoured boolean null,
-    primary key (id)
+create table burgers
+(
+    id int not null
+    auto_increment,
+    burger_name varchar
+    (50) not null,
+    devoured boolean default false,
+    primary key
+    (id)
 );
