@@ -9,18 +9,18 @@ var burger = require("../models/burger.js");
 router.get("/", function(req, res) {
   burger.all(function(data) {
     var hbsObject = {
-      burgerss: data
+      burgers: data
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
-router.post("/api/cats", function(req, res) {
+router.post("/api/burgers", function(req, res) {
+  // not getting here
   burger.create([
-    "name", "devoured"
+    "burger_name", "devoured"
   ], [
-    req.body.name, req.body.devoured
+    req.body.burger_name, req.body.devoured
   ], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
@@ -29,9 +29,6 @@ router.post("/api/cats", function(req, res) {
 
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
-
-  console.log("condition", condition);
-
   burger.update({
     devoured: req.body.devoured
   }, condition, function(result) {
@@ -44,7 +41,7 @@ router.put("/api/burgers/:id", function(req, res) {
   });
 });
 
-router.delete("/api/burgerss/:id", function(req, res) {
+router.delete("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   burger.delete(condition, function(result) {
