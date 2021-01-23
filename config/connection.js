@@ -1,6 +1,6 @@
 var mysql = require("mysql");
-const credentials = require('../config/config');
-// const { user, password } = require("./config");
+
+const { user, password } = require("./config");
 let connection
 
 if (process.env.JAWSDB_URL) {
@@ -9,8 +9,8 @@ if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
-    user: credentials.user,
-    password: credentials.password,
+    user: user,
+    password: password,
     database: "burgers_db",
   });
 }
