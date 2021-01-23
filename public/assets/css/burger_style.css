@@ -1,19 +1,26 @@
+* {
+  font-family: "Potta One", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #cf5c36;
+  color: #1b9aaa;
+}
+
+/* colorways: C5EFCB, CF5C36, 1B9AAA, F84AA7, 241E4E  */
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  display: inline;
 }
 
-.label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
-.form-group {
-  margin-bottom: 5px;
+form {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
+  text-align: center;
 }
