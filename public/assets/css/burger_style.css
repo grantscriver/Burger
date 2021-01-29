@@ -1,16 +1,27 @@
 * {
-  font-family: "Potta One", cursive;
   margin: 0;
   padding: 0;
 }
 
 header {
+  font-family: "Monofett", cursive;
   text-align: center;
-  background-color: #cf5c36;
-  color: #1b9aaa;
+  color: black;
+  background-color: #c5efcb;
+  font-size: 100%;
 }
 
-/* colorways: C5EFCB, CF5C36, 1B9AAA, F84AA7, 241E4E  */
+h2 {
+  font-family: "Chivo", sans-serif;
+}
+
+.burgers {
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 100px;
+  background-color: #cf5c36;
+  border: 20px solid tan;
+}
 
 li {
   padding: 5px;
@@ -21,6 +32,12 @@ li {
 form {
   margin: 0 auto;
   width: 50%;
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
+  font-family: "Chivo", sans-serif;
+}
+
+.secondRow {
+  margin-top: 100px;
+  font-family: "Permanent Marker", cursive;
 }
