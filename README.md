@@ -2,7 +2,7 @@
 
 [Heroku App](https://boiling-ravine-25470.herokuapp.com/)
 
-![Eat-Da-Burger site example](./public/assets/img/Eat-Da-Burger.jpg)
+![Eat-Da-Burger site example](./public/assets/img/burgerpic.jpg)
 
 ## Description
 
