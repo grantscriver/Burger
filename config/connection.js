@@ -1,5 +1,4 @@
 var mysql = require("mysql");
-const { password } = require("./config");
 
 // const { user, password } = require("./config");
 
