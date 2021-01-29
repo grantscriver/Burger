@@ -8,7 +8,6 @@ header {
   text-align: center;
   color: black;
   background-color: #c5efcb;
-  font-size: 100%;
 }
 
 h2 {
@@ -34,6 +33,10 @@ form {
   width: 50%;
   margin-top: 100px;
   text-align: center;
+  font-family: "Chivo", sans-serif;
+}
+
+.change-devoured {
   font-family: "Chivo", sans-serif;
 }
 
