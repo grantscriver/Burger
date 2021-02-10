@@ -20,6 +20,7 @@ h2 {
   margin-top: 100px;
   background-color: #cf5c36;
   border: 20px solid tan;
+  height: auto;
 }
 
 li {
@@ -42,5 +43,5 @@ form {
 
 .secondRow {
   margin-top: 100px;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Chivo", sans-serif;
 }

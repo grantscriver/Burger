@@ -1,8 +1,6 @@
 var mysql = require("mysql");
 
-// const { user, password } = require("./config");
-
-
+// For the user and password put your MySQL credentials in quotes for it to work locally, it works in deployment with the config.js which is ignored by GitHub, put user and password with no quotes when deploying.
 if (process.env.JAWSDB_URL) {
   var connection = mysql.createConnection(process.env.JAWSDB_URL)
 } else {
