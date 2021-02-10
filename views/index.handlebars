@@ -14,7 +14,7 @@
     <div class="row secondRow">
         <div class="col-lg">
             <h2>Burgers that are not devoured</h2>
-            <ul>
+            <ul class="list-group">
                 {{#each burgers}}
                 {{#if devoured}}
                 {{> burgers/burger-block devoured=false}}
@@ -26,7 +26,7 @@
         </div>
         <div class="col-lg">
             <h2>Burgers that are devoured</h2>
-            <ul>
+            <ul class="list-group">
                 {{#each burgers}}
                 {{#unless devoured}}
                 {{> burgers/burger-block devoured=true}}

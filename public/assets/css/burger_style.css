@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 header {
@@ -44,4 +45,10 @@ form {
 .secondRow {
   margin-top: 100px;
   font-family: "Chivo", sans-serif;
+}
+
+ul {
+  justify-content: center;
+  list-style-type: none;
+  display: flex;
 }
